@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://drmephnpwi736"]
+
+[ext_resource type="Texture2D" uid="uid://dm7agmolhi87u" path="res://Buttons/BlankCircle.png" id="1_g1mh8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cee3e"]
+radius = 18.1108
+
+[node name="BlankCircle" type="Area2D"]
+
+[node name="BlankBody1" type="RigidBody2D" parent="."]
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="BlankBody1"]
+scale = Vector2(0.431373, 0.431373)
+texture = ExtResource("1_g1mh8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlankBody1"]
+shape = SubResource("CircleShape2D_cee3e")
+
+[node name="BlankBody2" type="RigidBody2D" parent="."]
+position = Vector2(50, 0)
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="BlankBody2"]
+scale = Vector2(0.431373, 0.431373)
+texture = ExtResource("1_g1mh8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlankBody2"]
+shape = SubResource("CircleShape2D_cee3e")
+
+[node name="BlankBody3" type="RigidBody2D" parent="."]
+position = Vector2(100, 0)
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="BlankBody3"]
+scale = Vector2(0.431373, 0.431373)
+texture = ExtResource("1_g1mh8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlankBody3"]
+shape = SubResource("CircleShape2D_cee3e")
+
+[node name="BlankBody4" type="RigidBody2D" parent="."]
+position = Vector2(150, 0)
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="BlankBody4"]
+scale = Vector2(0.431373, 0.431373)
+texture = ExtResource("1_g1mh8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlankBody4"]
+shape = SubResource("CircleShape2D_cee3e")

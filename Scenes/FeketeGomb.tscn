@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwhhccldlpt8m"]
+
+[ext_resource type="Texture2D" uid="uid://dpi034uq4ifyq" path="res://Buttons/Fekete_kor.png" id="1_wd46a"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pe7os"]
+radius = 14.0
+
+[node name="FeketeGomb" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0929487, 0.0929487)
+texture = ExtResource("1_wd46a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pe7os")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
